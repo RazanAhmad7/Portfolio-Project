@@ -96,8 +96,8 @@ header {
 }
 
 .About .left img{
-    width:50%;
-    height: 98%;
+    width:370px;
+    height: 370px;
     border: 8px solid #416D19;
     border-radius: 50%;
     
@@ -381,6 +381,7 @@ header {
 }
 
 .course-content {
+    width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 15px 20px;
     border-radius: 8px;
@@ -543,8 +544,8 @@ header {
 }
 
 .About .left img{
-    width:60%;
-    height: 100%; 
+    width:250px;
+    height:250px; 
 }
 
 .About .right{
