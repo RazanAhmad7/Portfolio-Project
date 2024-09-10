@@ -4,12 +4,15 @@ body {
     box-sizing: border-box;
     height: 100vh;
     scroll-behavior: smooth;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #fbfbfb;
+    font-family:sans-serif
 }
-/****************************************************************************************************/
-/* Header & Nav section  */
-/****************************************************************************************************/
+
+/*
+**************************************************************************************************
+ Header & Nav section 
+**************************************************************************************************
+*/
 
 header {
     display: flex;
@@ -37,24 +40,31 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .nav-bar .name{
-    font-family: "Sofia", sans-serif;
-    color: #416D19;
+    color:#416D19;
+    font-size: 1.5em;
+    letter-spacing: 7px;
+    margin-left: 90px;
 }
-.icon-name .name span{
-   color: #fbfbfb;
-    font-size: 0.8em;
-}
+
+
 .nav-bar .navigations{
-    width: 50%;
+    width: 62%;
     display: flex;
     justify-content: space-evenly;
+    font-size: 1.1em;
 }
+
 .nav-bar .navigations a{
     color: #416D19;
     text-decoration: none;
     font-weight: bold;  
-    font-family: "Sofia", sans-serif;
+}
+
+
+.nav-bar .navigations a:hover{
+    color: #9BCF53;
 }
 
 
@@ -67,20 +77,21 @@ header {
     align-items: center;
     background-color: #416D19;
 }
+
 .icons-cir i{
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2.3em;
     color: #f2ec94;
 }
 
 
-
-/****************************************************************************************************/
-/* About section  */
-/****************************************************************************************************/
+/*
+**************************************************************************************************
+ About section  
+**************************************************************************************************
+*/
 
 .About{
-    margin-top: 140px;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     justify-content: center;
@@ -88,7 +99,6 @@ header {
 }
 
 .About .left{
-  
     height: 300px;
     display: flex;
     justify-content: center;
@@ -99,12 +109,11 @@ header {
     width:370px;
     height: 370px;
     border: 8px solid #416D19;
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }
 
 .About .left img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1.5s ease-in-out;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
     border: 5px solid #52881e;
@@ -117,7 +126,7 @@ header {
     justify-content: center;
 }
 
- .social{
+.social{
     height: auto;
     display: flex;
     justify-content: start;
@@ -128,10 +137,10 @@ header {
 .social a:hover{
     box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
     border: 2px solid #52881e;
-    transform: scale(1.5);
+    transform: scale(1.5);  
 }
 
- .social a{
+.social a{
     text-decoration: none;
     color: #1f3a07;
     width: 40px;
@@ -142,52 +151,50 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
+    transition:  color 0.4s ease, transform 0.7s ease;
 }
+
 .About .right .name{
     font-size: 2.4em;
     font-weight: bold;
     margin: 0px;
+    color: #1f3a07;
 }
 
-.About .right .job{
-    font-size: 0.9em;
-    text-transform: uppercase;
-    opacity: 0.8;
-    margin: 0px;
-}
 
 .About .right .description{
     font-size: 1.2em;
     width: 90%;
+    color: #1f3a07;
 }
 
-/****************************************************************************************************/
-/* Education section  */
-/****************************************************************************************************/
+
+/*
+**************************************************************************************************
+ Education section
+**************************************************************************************************
+*/
 
 .education{
     margin-top: 125px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
 }
 
 .education .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-      
+    align-items: center;  
 }
 
- .title h1{
+.title h1{
     font-size: 2.8em;
     font-weight: bold;
     color: rgb(65, 109, 25);
     border-bottom: 2px ridge #f2ec94;
-
 }
 
 .education .edu-box2{
@@ -197,13 +204,11 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .education .edu-info0{
     width: 70%;
     height: 450px;
     background-color: rgb(213, 237, 159); 
 }
-
 .education .edu-info0 .edu-info1{
     margin-left: 15px;
     margin-top: 15px;
@@ -212,7 +217,6 @@ header {
     height: 450px;
     background-color: #fbfbfb;   
 }
-
 .education .edu-info0 .edu-info1 .edu-info2{
     margin-left: 15px;
     padding-top: 15;
@@ -223,39 +227,47 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0px;
     color: #1f3a07;
+    
+}
+.edu-info2 p {
+    margin: 10px;
     font-size:1em ;
 }
-
-
-/****************************************************************************************************/
-/* Projects section  */
-/****************************************************************************************************/
-
+.edu-info2 h2  {
+    font-size:1.6em ;
+    margin-top: 0px;
+}
+.edu-info2 h3{
+    margin: 0px 0px 20px 0px;
+    font-size:1.2em ;
+}
+/*
+**************************************************************************************************
+ Projects section
+**************************************************************************************************
+*/
 .projects{
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-   
 }
-
 .projects .title{
     grid-column: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
-
 .projects .info-card{
-    font-family: 'Times New Roman', Times, serif;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    background-color: white;
 }
 .projects .info-card i{
     font-size: 2em;
@@ -263,18 +275,17 @@ header {
     margin-bottom: 10px;
 }
 .projects .info-card h2{
-    color: #416D19;
-    font-size: 1.8em;
-    
+    color: #1f3a07;
+    font-size: 2.1em;  
 }
 .projects .info-card p{
-    color: #9BCF53;
-    font-size: 1em;
+    color: #416D19;
+    font-size: 1.1em;
     text-align: center;
-    font-weight: bold;
     width: 70%;
-}
+    margin-top: 0px;
 
+}
 .projects .info-card a{
     color:  #1f3a07;
     font-size: 0.8em;
@@ -284,7 +295,6 @@ header {
     font-size: 1.2em;
     margin-right: 5px;
 }
-
 .projects .images-card{
     box-shadow: 0px 0px 15px rgba(65, 109, 25,0.3);
     background-color: rgb(213, 237, 159);
@@ -294,15 +304,11 @@ header {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    gap: 5px;
-    
+    gap: 5px;  
 }
-
 .projects .images-card:hover{
     box-shadow: 0px 0px 15px rgba(65, 109, 25,1);
 }
-
-
 .projects .images-div:hover{
     transform: scale(1.1);
 }
@@ -311,17 +317,15 @@ header {
     display: flex;
     justify-content: center;
 }
-
-
 #midpic{
     margin-top: 40px;
 }
 
-
-
-/****************************************************************************************************/
-/* Courses section  */
-/****************************************************************************************************/
+/*
+**************************************************************************************************
+Courses section 
+**************************************************************************************************
+*/
 
 .courses{
     display: flex;
@@ -330,25 +334,21 @@ header {
     justify-content: center;
     margin-top: 100px;
 }
-
 .courses .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .courses .courses-items{
     position: relative;
-    margin-left: 30px;
+    margin-left: 70px;
     width: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
-
 .courses .courses-items::before {
     content: '';
     position: absolute;
@@ -358,13 +358,12 @@ header {
     width: 2px;
     background-color: #1f3a07;
 }
-
 .course-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     position: relative;
-   
+    
 }
 
 .course-icon {
@@ -379,13 +378,11 @@ header {
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .course-icon a img {
     border-radius: 50%;
     width: 45px;
     height: 45px;
 }
-
 .course-content {
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -393,37 +390,39 @@ header {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     position: relative;
+    transition:  color 0.4s ease, transform 0.7s ease;
 }
 
+.course-content:hover{
+    transform: scale(1.02);
+}
 .course-content h2 {
     margin: 8px 0px;
 }
-
 .course-content a {
     margin: 5px 0;
     font-size: 0.8em;
-    color: #9BCF53;
+    color:#2e5e04 ;
 }
 
 .course-content p {
     margin: 0px 0px 5px 0px;
     font-size: 0.9em ;
-    color: #b3b3b3;
+    color: #2d2b2b;
 }
 
-
-/****************************************************************************************************/
-/* Contact section  */
-/****************************************************************************************************/
+/*
+**************************************************************************************************
+ Contact section
+**************************************************************************************************
+*/
 
 .contact{
-    margin-top: 200px;
+    margin-top: 110px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
-   
-
 }
 .contact .title{
     display: flex;
@@ -439,32 +438,25 @@ header {
     justify-content: center;
     align-items: center;
 }
-
- .first , .second, .third {
+.first , .second, .third {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     color: white;
-    font-family: "Sofia", sans-serif;
 }
-
-
 .contact-box .social0{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-
 .contact-box .social{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 15px;
-   
 }
-
 .contact-box .social a{
     text-decoration: none;
     color: white;
@@ -477,48 +469,45 @@ header {
     align-items: center;
     font-size: 0.9em;
 }
-
 .contact-box .links{
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
     gap: 10px;
-    margin-left: 100px;
+    margin-left: 190px;
 }
 .contact-box .contact-info{
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: 140px;
 }
-
 .contact-box a, .contact-box p {
-    font-family: "Sofia", sans-serif;
     color: white;
     text-decoration: none;
 }
-.contact-box  a:hover, .contact-box p:hover{
+.contact-box p:hover ,.contact-box a:hover {
     color: #9BCF53;
+   
+}
+.contact-box .social0 .social  a:hover{
+     border: 2px solid #9BCF53;
 }
 
 
 
 
 /*
-**********
-***********
-************
-**************
-****************
-**************
-***************
+
+Media Query for smaller screens
+
 */
 
 @media (min-width: 100px) and (max-width: 890px) 
 {
-    /* For screens larger than 768px */
+
     .nav-bar {
         width: 90%;
         height: auto;
@@ -532,39 +521,39 @@ header {
     .nav-bar .navigations {
         width: 100%;
         justify-content: space-evenly;
-        height: 20px;
+        align-items: center;
+        height: 5px;
     }
 
     .nav-bar .navigations a {
-        font-size: 1em;
+        font-size: 0.7em;
     }
-
 
    .About{
     margin-top: 100px;
     grid-template-columns: repeat(1, 1fr);
-}
+    }
 .About .left{
     height: 250px;
     margin-bottom: 45px;
-}
+    }
 
 .About .left img{
     width:250px;
     height:250px; 
-}
+    }
 
 .About .right{
     margin-top: 25px;
     height: 150px;
     align-items: center;
-}
+    }
 
 .About .right .name{
     font-size: 1.5em;
     font-weight: bold;
     margin: 0px;
-}
+    }
 .About .right .job{
     font-size: 0.8em;
 }
@@ -647,16 +636,14 @@ header {
 }
 .courses .courses-items{
     width: 80%;
-        margin-left: 20px;
+    margin-left: 20px;
     
 }
-
 .course-content{
     margin-top: 20px;
     width: 90%;
     margin-left: 50px;
 }
-
 .course-icon {
     left: -25px;
 }
@@ -698,3 +685,26 @@ header {
 }
 
 }
+
+@media (min-width: 900px) and (max-width: 1045px) {
+    
+    .courses .courses-items{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .courses .courses-items::before {
+        left: 0px;
+        top: 20px;
+    }
+    .course-content{
+        margin-top: 20px;
+        width: 90%;
+        margin-left: 50px;
+    }
+    .course-icon {
+        left: -25px;
+    }
+    
+}
+
